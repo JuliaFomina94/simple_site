@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'website/css/news.css' %}">
+    <meta charset="UTF-8">
+    <title>News</title>
+</head>
+<body>
+<div class="row">
+    <div class="main-news img">
+        <h1>Новости</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="articles-container">
+        {% for item in news_item %}
+            <div class="article-container">
+                <div class="article-image-container">
+                    <div class="article-image" style="background-image: url('{{ item.preview_image.image.url }}')"></div>
+                    <div class = "text">
+                        <p>{{ item.short_description }}</p>
+                    </div>
+                </div>
+                <div class="article-date">
+                    <span class="date">{{ item.published|date:"Y-m-d" }}</span>
+                </div>
+                <div class="article-title-container">
+                    <h2 class="no-padding no-margin cut">
+                        <a href="{% url 'newsitem' item.id %}">{{ item.title }}</a>
+                    </h2>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

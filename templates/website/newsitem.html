@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'website/css/newsitem.css' %}">
+    <meta charset="UTF-8">
+    <title>{{ item.title }}</title>
+</head>
+<body>
+<div class="row">
+    <div class="article-container">
+        <div class="article-title-container">
+            <h1 class="no-padding no-margin">
+                {{ news_item.title }}
+            </h1>
+        </div>
+        <div class="article-image-container mx-auto">
+            <div class="article-image" style="background-image: url('{{ news_item.preview_image.image.url }}')"></div>
+        </div>
+        <div class="article-date">
+            <span class="date">{{ news_item.published }}</span>
+        </div>
+        <div class="article-text">
+            <p>
+                {{ news_item.content }}
+            </p>
+        </div>
+        <div class="article-source">
+            <a href="{{ news_item.source.url }}">Source: {{ news_item.title }}</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

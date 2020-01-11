@@ -1,0 +1,57 @@
+
+h1 {
+    font-size: 35px;
+    color: #1d2124;
+    text-align: center;
+}
+
+.article-container {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-title-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.article-image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.article-image {
+    width: 520px;
+    height: 380px;
+    background: no-repeat center center / cover none;
+
+}
+
+.article-date {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.article-text {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: justify;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}

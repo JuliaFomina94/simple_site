@@ -1,0 +1,79 @@
+html {
+    height:100%;
+}
+
+body {
+    height:100%;
+    width:100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+
+h1{
+    font-size: 6vw;
+    font-weight: 500;
+    font-variant: all-small-caps;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/main-block.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.main-block {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 3%;
+}
+
+.main-block-subtitle {
+    font-size: 2vw;
+    color: #dbe9eb;
+}
+
+/* Навигация */
+
+.navigation {
+    position: relative;
+    top: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.nav-item {
+    color: white;
+    border: white 2px solid;
+    width: 100px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-variant: all-small-caps;
+    font-size: 2vw;
+}
+
+.nav-item a:hover {
+    font-weight: 600;
+    color: white;
+}
